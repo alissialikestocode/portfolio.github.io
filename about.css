@@ -1,0 +1,31 @@
+body {
+    background-color: gray;
+}
+
+.title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+    color: purple;
+    text-align: left;
+}
+
+.about {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+    color: black;
+    text-align: left;
+}
+
+.prof-interests {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+    color: black;
+    text-align: center;
+}
+
+.pers-interests {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+    color: black;
+    text-align: center;
+}
