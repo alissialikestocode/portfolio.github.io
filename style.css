@@ -25,6 +25,7 @@ body {
     letter-spacing: 1vh;
     margin: -10vh;
     padding: 0vh 12vw 0 11vw;
+    caret-color: transparent;
 }
 
 /* Create empty div to space name and menu */
