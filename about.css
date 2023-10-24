@@ -1,5 +1,6 @@
 body {
     background-color: gray;
+    overflow: hidden;
 }
 
 .hello {
@@ -8,45 +9,103 @@ body {
     color: purple;
     text-align: left;
 }
+/* Create container to hold image in column 1 and another grid for text info in column 2 */
 
 .container {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+    justify-items: center;
 }
 
+.red-selfie {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    width: 100%;
+    height: 60%;
+    object-fit: contain;
+    border-radius: 10%;
+}
+
+/* Container to hold text info and links inside column 2 of original grid */
+.container2 {
+    display: grid;
+    grid-template-rows: repeat(3, 33%);
+    grid-template-columns: 1fr;
+    width: 75%;
+    height: 50%;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    /* order: -1; */
+    margin: 17vh 0 0 0;
+    row-gap: 1em;
+    
+    
+}
 
 .about {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/2;
     font-family: Arial, Helvetica, sans-serif;
     font-size: .8em;
     color: black;
     text-align: left;
-    grid-column: 1;
-    grid-row: 1;
-    display: flex;
-}
-
-.red-selfie {
-    grid-row: 1;
-    grid-column: 2;
-    
+    justify-content: space-around;
+    font-size: 1em;
 }
 
 .interests {
-    grid-row: 2;
-    grid-column: 1;
+    grid-row: 2/3;
+    grid-column: 1/2;
 }
 
 .prof-interests {
     font-family: Arial, Helvetica, sans-serif;
     font-size: .8em;
     color: black;
-    text-align: center;
 }
 
 .pers-interests {
     font-family: Arial, Helvetica, sans-serif;
     font-size: .8em;
     color: black;
-    text-align: center;
+    text-align: left;
+}
+
+/* Place menu in grid, build flexbox for menu links */
+.menu {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    width: 75%;
+    text-align: left;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    position: sticky;
+    bottom: 0;
+    padding: 1em;
+    
+    
+}
+
+/* Place menu links inside grid with paddiing to 
+fine-tune item placement*/
+.home {
+    display: inline-flex;
+    /* text-align: left; */
+}
+
+.resume {
+    display: inline-flex;
+    /* text-align: center; */
+}
+
+.contact {
+    display: inline-flex;
+    /* text-align: right; */
 }
