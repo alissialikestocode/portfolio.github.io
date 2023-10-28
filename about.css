@@ -1,12 +1,12 @@
 body {
-    background-color: gray;
+    background-color: #37306B;
     overflow: hidden;
 }
 
 .hello {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2em;
-    color: purple;
+    color: #9E4784;
     text-align: left;
 }
 /* Create container to hold image in column 1 and another grid for text info in column 2 */
@@ -53,27 +53,29 @@ body {
     grid-column: 1/2;
     font-family: Arial, Helvetica, sans-serif;
     font-size: .8em;
-    color: black;
+    color: #9D76C1;
     text-align: left;
     justify-content: space-around;
     font-size: 1em;
 }
 
 .interests {
+    color: #7858A6;
     grid-row: 2/3;
     grid-column: 1/2;
+    font-size: 0.8em;
 }
 
 .prof-interests {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: .8em;
-    color: black;
+    /* font-size: .8em; */
+    /* color: black; */
 }
 
 .pers-interests {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: .8em;
-    color: black;
+    /* font-size: 0.8em; */
+    /* color: black; */
     text-align: left;
 }
 
@@ -89,10 +91,13 @@ body {
     position: sticky;
     bottom: 0;
     padding: 1em;
-    
-    
 }
 
+.menu a {
+    color: #D27685;
+    text-decoration: none;
+
+}
 /* Place menu links inside grid with paddiing to 
 fine-tune item placement*/
 .home {
