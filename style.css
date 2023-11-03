@@ -37,7 +37,6 @@ body {
 
 /* Style menu and create a grid inside */
 .menu {
-    /* background-color:blanchedalmond; */
     overflow: hidden;
     position: fixed;
     bottom: 0;
@@ -92,4 +91,12 @@ fine-tune item placement*/
     grid-column: 3;
     text-align: right;
     padding-right: 3vw;
+}
+
+/* Add media query to fix name for screens smaller than 800px */ 
+@media screen and (max-width: 800px) {
+    .name {
+        padding: 15% 0 0 0;
+        font-weight: bold;
+    }
 }
