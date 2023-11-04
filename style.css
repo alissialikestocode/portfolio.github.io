@@ -1,8 +1,9 @@
 /* Download Font Experiment */
 @font-face {
     font-family: myFont;
-    src: url(Fonts\Dolce.ttf);
+    src: url(Fonts/Dolce.ttf);
 }
+
 
 /* Place image in background so text will slightly overlap */
 body {
