@@ -4,11 +4,6 @@
     src: url(Fonts\Dolce.ttf);
 }
 
-@font-face {
-    font-family: myFontBold;
-    src: url(Fonts\DolceBold.ttf);
-}
-
 /* Place image in background so text will slightly overlap */
 body {
     background-color: rgb(190, 106, 21);
@@ -70,7 +65,8 @@ a.sneaky {
     justify-content: space-between;
     flex-direction: row;
     align-self: flex-end; */
-    font-family: myFont/*'Bellota Text'*/, sans-serif, Arial, sans-serif;    font-size: 1em;
+    font-family: myFont, sans-serif, Arial, sans-serif;    
+    font-size: 1em;
     color: rgb(50, 31, 40);
     margin-bottom: 2vw; 
 }
