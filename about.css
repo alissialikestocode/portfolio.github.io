@@ -1,7 +1,7 @@
 /* Download Font Experiment */
 @font-face {
     font-family: myFont;
-    src: url(Dolce.ttf);
+    src: url(Fonts/Dolce.ttf);
 }
 
 body {
