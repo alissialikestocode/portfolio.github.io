@@ -1,2 +1,2 @@
 # portfolio.github.io
-My portfolio website project for the culmination of my Tech Moms class
+Portfolio website project for the culmination of my Tech Moms class
