@@ -1,3 +1,9 @@
+/* Download Font Experiment */
+@font-face {
+    font-family: myFont;
+    src: url(Dolce.ttf);
+}
+
 /* Place image in background so text will slightly overlap */
 body {
     background-color: rgb(190, 106, 21);
@@ -13,7 +19,7 @@ body {
 
 /* Style and position name responsively */
 .name {
-    font-family:'Bellota Text', sans-serif,  Arial, sans-serif;
+    font-family: 'Bellota Text', sans-serif,  Arial, sans-serif;
     font-size: /*30vh*/ 15vw;
     color: rgb(50, 31, 40);
     display: flex;
@@ -44,11 +50,11 @@ body {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    /*display: flex;
+    /* display: flex;
     justify-content: space-between;
     flex-direction: row;
-    align-self: flex-end;*/
-    font-family: 'Bellota Text', sans-serif, Arial, sans-serif;    font-size: 1em;
+    align-self: flex-end; */
+    font-family: myFont/*'Bellota Text'*/, sans-serif, Arial, sans-serif;    font-size: 1em;
     color: rgb(50, 31, 40);
     margin-bottom: 2vw; 
 }
@@ -95,7 +101,8 @@ fine-tune item placement*/
 /* Add media query to fix name for screens smaller than 800px */ 
 @media screen and (max-width: 800px) {
     .name {
-        padding: 15% 0 0 0;
+        padding: 8% 0 0 0;
         font-weight:bolder;
     }
 }
+
