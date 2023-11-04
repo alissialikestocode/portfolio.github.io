@@ -1,7 +1,11 @@
 /* Download Font Experiment */
 @font-face {
     font-family: myFont;
-    src: url(Dolce.ttf);
+    src: url(Fonts\Dolce.ttf);
+}
+@font-face {
+    font-family: myFontBold;
+    src: url(Fonts\DolceBold.ttf);
 }
 
 /* Place image in background so text will slightly overlap */
@@ -19,10 +23,10 @@ body {
 
 /* Style and position name responsively */
 #name {
+    display: flex;
     font-family: 'Bellota Text', sans-serif,  Arial, sans-serif;
     font-size: /*30vh*/ 15vw;
     color: rgb(50, 31, 40);
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -39,12 +43,11 @@ body {
 a.sneaky {
     color: rgb(50, 31, 40);
     text-decoration: none;
-   
 }    
 
 .sneaky a:hover {
-            cursor: pointer;
-        }
+        cursor: pointer;
+}
 
 /* Create empty div to space name and menu */
 .empty-space {
@@ -108,7 +111,6 @@ fine-tune item placement*/
 @media screen and (max-width: 800px) {
     .name {
         padding: 8% 0 0 0;
-        font-weight:bolder;
     }
 }
 
