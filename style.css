@@ -18,7 +18,7 @@ body {
   }
 
 /* Style and position name responsively */
-.name {
+#name {
     font-family: 'Bellota Text', sans-serif,  Arial, sans-serif;
     font-size: /*30vh*/ 15vw;
     color: rgb(50, 31, 40);
@@ -32,11 +32,23 @@ body {
     margin: -10vh;
     padding: 0vh 12vw 0 11vw;
     caret-color: transparent;
+    
 }
+
+/* Style easter egg */
+a.sneaky {
+    color: rgb(50, 31, 40);
+    text-decoration: none;
+   
+}    
+
+.sneaky a:hover {
+            cursor: pointer;
+        }
 
 /* Create empty div to space name and menu */
 .empty-space {
-    display: block;
+    display: flex;
     height: 60vh;
     margin: 1vh;
 }
@@ -58,12 +70,6 @@ body {
     color: rgb(50, 31, 40);
     margin-bottom: 2vw; 
 }
-
-/* grid-item {
-    position: relative;
-    text-align: center;
-
-} */
 
 /* Style links in the menu */
 .menu a {
