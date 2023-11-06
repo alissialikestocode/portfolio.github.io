@@ -6,9 +6,6 @@
 
 body {
     background-color: #37306B;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
     caret-color: transparent;
 }
 
@@ -25,18 +22,19 @@ body {
 #flex-container {
     display: flex;
     flex-direction: row;
+    box-sizing: border-box;
 }
 
 #column1 {
     width: 50%;
-    height: 100vh;
-    margin: 3% 0 0 3%;
+    padding: 3% 0 0 3%;
+    box-sizing: border-box;
 }
 
 #column2 {
     width: 50%;
-    height: 100vh;
     padding: 3% 0 0 5%;
+    box-sizing: border-box;
 }
 
 /* Size space for photo in column1 */
@@ -54,6 +52,7 @@ img {
     object-fit: contain;
     border-radius: 10%;
     border: 1px black solid;
+    
 }
 
 /* Style text block */
@@ -106,7 +105,7 @@ img {
 /* Add media query to go to one column for screens smaller than 500px */ 
 @media screen and (max-width: 800px) {
     body {
-        /* background: lightgrey; */
+    /* background: lightgrey; */
         overflow: scroll;
     }
 

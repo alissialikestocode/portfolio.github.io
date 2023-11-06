@@ -1,4 +1,4 @@
-/* Download Font Experiment */
+/* Download Font */
 @font-face {
     font-family: myFont;
     src: url(Fonts/Dolce.ttf);
@@ -8,37 +8,34 @@
 /* Place image in background so text will slightly overlap */
 body {
     background-color: rgb(190, 106, 21);
-    background-size: 50vh;
-    background-position: center center;
-    background-image: url("IMG_1832_Original.jpeg");
-    background-repeat: no-repeat;
-    display: inline-block;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    padding: 4vh 0 0 0;
-  }
+    caret-color: transparent;
+}
 
 /* Position name responsively */
 #name-container {
     display: flex;
-    /* background: green; */
-    flex-flow: row nowrap;
+    background: transparent;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
-    margin: -10vh;
-    padding: 0vh 13vw 0 11vw;
+    align-content: center;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: -10vh 0 0 0;
+    padding: 5vh 0 0 0;
+    z-index: 1;
+    position: sticky;
 }
 
 /* Style name */
 #name {
+    display: flex;
     font-family: 'Bellota Text', sans-serif, Arial, sans-serif;
-    font-size: /*30vh*/15vw;
+    font-size: /*30vh*/ 14vw;
     color: rgb(50, 31, 40);
-    caret-color: transparent;
-    text-align: center;
+    justify-content: center;
     letter-spacing: 1vh;
-    /* text-wrap: nowrap; */
+    text-wrap: nowrap;
+    z-index: 1; 
 }
 
 /* Style easter egg */
@@ -58,6 +55,41 @@ a.sneaky {
     margin: 1vh;
 }
 
+/* Style image container */
+.landing-photo-container {
+    display: flex;
+    background: transparent;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    max-width: 50vw;
+    justify-content: center;
+    align-content: center;
+    z-index: -1;
+    margin: -15vh 0 0 25vw;
+    padding: -15vh 0 0 0;
+}
+
+/* Style image to fit in container */
+.goldSelfie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 70vh;
+    width: auto;
+    object-fit: contain;
+    border: 1px black solid;
+    z-index: -1;
+}
+
+/* Style image to correct size*/
+img {
+    object-fit: contain;
+    max-width: auto;
+    max-height: 70vh;
+}
+
 /* Style menu and create a grid inside */
 .menu {
     overflow: hidden;
@@ -67,14 +99,11 @@ a.sneaky {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    /* display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-self: flex-end; */
+
     font-family: myFont, sans-serif, Arial, sans-serif;    
     font-size: 1em;
     color: rgb(50, 31, 40);
-    margin-bottom: 2vw; 
+    margin-bottom: 1vw; 
 }
 
 /* Style links in the menu */
@@ -96,7 +125,7 @@ fine-tune item placement*/
 .about {
     grid-column: 1;
     text-align: left;
-    padding-left: 3vw;
+    padding-left: 1vw;
 }
 
 .resume {
@@ -112,9 +141,14 @@ fine-tune item placement*/
 
 /* Add media query to fix name for screens smaller than 800px */ 
 @media screen and (max-width: 800px) {
-    #name {
-        padding: 3% 0 0 0;
+    #name-container {
+        padding: 10vh 0 0 0;
         font-weight: bolder;
+    }
+
+    .landing-photo-container {
+        padding: 8vh 0 8vh 0;
+        max-width: 50%;
     }
 }
 
